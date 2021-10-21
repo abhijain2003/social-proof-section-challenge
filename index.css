@@ -1,0 +1,156 @@
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+body  {
+    font-family: 'Spartan', sans-serif;
+}
+
+/* <!-- heading-section --> */
+
+.heading  {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    justify-content: space-around;
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 50px;
+    font-weight: 700;
+    white-space: pre;
+}
+
+.subtitle  {
+    font-size: 15px;
+    color: hsl(303, 10%, 53%);
+    margin-top: 10px;
+    white-space: pre;
+}
+
+/* review-section */
+
+.review-plate  {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-plate01 , .review-plate02 , .review-plate03  {
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    margin: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    width: 400px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    justify-content: space-around;
+}
+
+.review-plate02  {
+    margin-left: 30px;
+}
+
+.review-plate03  {
+    margin-left: 60px;
+}
+
+/* card-section */
+
+.card  {
+    display: flex;
+}
+
+.card-heading  {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card-head  {
+    margin-top: 10px;
+}
+.card-subtitle  {
+    color: hsl(333, 80%, 67%);
+    opacity: 70%;
+}
+
+.card-image  {
+    border-radius: 100%;
+    width: 70%;
+}
+
+.card-title , .card-article  {
+    color: #fff;
+}
+
+.card-article  {
+    opacity: 70%;
+    font-size: 15px;
+}
+
+.card-1 , .card-2 , .card-3  {
+    width: 400px;
+    height: 200px;
+    margin: 0  25px  40px;
+    background-color: hsl(300, 43%, 22%);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card-2  {
+    margin-top: 25px;
+}
+
+.card-3  {
+    margin-top: 50px;
+}
+
+.card-2:hover  {
+    transition: all 1s ease-in-out;
+    margin-top: -1px;
+}
+
+.card-3:hover  {
+    transition: all 1s ease-in-out;
+    margin-top: -1px;
+}
+
+@media screen and (max-width: 400px)  {
+    .heading  {
+        flex-direction: column;
+        margin: 25px;
+    }
+
+    h1 , .subtitle {
+        text-align: center;
+        margin: 10px  15px  0  0;
+    }
+
+    .review-plate01 , .review-plate02 , .review-plate03  {
+        margin: 8px  0;
+    }
+
+    .review-plate02  {
+        margin-left: 0;
+    }
+    
+    .review-plate03  {
+        margin-left: 0;
+    }
+
+    .card  {
+        flex-direction: column;
+        margin: 25px  0px  10px  10;
+    }
+
+    .card-3  {
+        margin-top: -25px;
+    }
+
+    .card-2  {
+        margin-top: -25px;
+    }
+    
+}
